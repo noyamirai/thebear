@@ -8,18 +8,20 @@ export async function getCaptions() {
         const result = data.split("\n\n").map(function (item) {
             var parts = item.split("\n");
             let [startTime, endTime] = parts[1].split(" --> ");
-            
+            // console.log(endTime);
+
             startTime = vttTimestampToSeconds(startTime);
             endTime = vttTimestampToSeconds(endTime);
+			// console.log(endTime);
 
-            startTime = Math.floor10(startTime, -1);
-            endTime = Math.floor10(endTime, -1);
+            // startTime = Math.floor10(startTime, -1);
+            // endTime = Math.floor10(endTime, -1);
 
             return {
                 number: parts[0],
                 start: startTime,
                 end: endTime,
-                text: parts[2],
+                text: { speaker: parts[2], text: parts[3] ?? '' },
             };
         });
 
@@ -34,13 +36,22 @@ export async function getCaptions() {
     }
 }
 
+// function vttTimestampToSeconds(timestamp) {
+//   const timeComponents = timestamp.split(':').map(parseFloat);
+//   const hours = timeComponents[0];
+//   const minutes = timeComponents[1];
+//   const seconds = timeComponents[2];
+//   const milliseconds = parseInt(timestamp.split('.')[1], 10);
+
+//   return hours * 3600 + minutes * 60 + seconds + milliseconds / 1000;
+// }
+
 function vttTimestampToSeconds(timestamp) {
-  const timeComponents = timestamp.split(':').map(parseFloat);
+  const timeComponents = timestamp.split(/[:.]/).map(parseFloat);
   const hours = timeComponents[0];
   const minutes = timeComponents[1];
-  const seconds = timeComponents[2];
-  const milliseconds = parseInt(timestamp.split('.')[1], 10);
-  return hours * 3600 + minutes * 60 + seconds + milliseconds / 1000;
+  const seconds = timeComponents[2] + timeComponents[3] / 1000;
+  return hours * 3600 + minutes * 60 + seconds;
 }
 
 

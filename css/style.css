@@ -199,6 +199,11 @@ main {
     }
 
     .cc p.off {
-      transition: .2s;
+      transition: .05s;
       opacity: 0;
+    }
+
+    .speaker {
+      font-weight: 700;
+      text-transform: uppercase;
     }

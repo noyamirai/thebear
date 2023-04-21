@@ -38,7 +38,7 @@ function insertCaptions(captionsObject){
         textEl.classList.add('p' + key);
         textEl.setAttribute('data-cc-item', '');
 
-        const htmlString = `${captionItem.text}`;
+        const htmlString = `<span class="speaker">${captionItem.text.speaker}:</span><span>${captionItem.text.text}</span>`;
         textEl.innerHTML = htmlString;
 
         ccContainer.appendChild(textEl);
@@ -52,11 +52,6 @@ function insertCaptions(captionsObject){
 function updateTimerDisplay(captions){
 	var t = player.getCurrentTime();
 	t = Math.floor10(t,-1);
-
-    // console.log(captions);
-    // console.log(t);
-	// for each paragraph we want to know:
-	// (paragraph number, start time, end time, current time)
 
 	//Officer K D 6 - 3 . 7. Let’s begin. Ready?
 	var i = 0;
@@ -87,7 +82,7 @@ function pTimes(num,startT,endT,curT) {
     // const startT = vttTimestampToSeconds(vttTimestamp);
 
     console.log(curT);
-    console.log(startT);
+    // console.log(endT);
 
     if(curT > endT && !curP.classList.contains('off')) {
         curP.classList.add('off');
