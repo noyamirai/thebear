@@ -1,5 +1,6 @@
 var player;
 
+console.log('HALLO');
 import { getCaptions } from "./captions.js";
 
 window.onYouTubeIframeAPIReady = function () {
@@ -79,11 +80,6 @@ function updateTimerDisplay(captions){
 
 	var i = 0;
 
-	// while( i < sounds.length) {
-	// 	sTimes(i,sounds[i],t);
-	// 	i++;
-	// }
-
     // Change 136.1 to the length of your own video in seconds
 	if ( t < 120.6) {
 		setTimeout(() => {
@@ -93,42 +89,16 @@ function updateTimerDisplay(captions){
 	
 }
 function pTimes(num,startT,endT,curT) {
-	var curP = document.querySelector('.p' + num);
+	// var curP = document.querySelector('.p' + num);
 
-    // const curT = 0.07795503623962402;
-    // const startT = vttTimestampToSeconds(vttTimestamp);
+	// credits naar nina
+	const curP = document.querySelector(`.p${num}`);
+	curP.classList.toggle('off', curT > endT);
+	curP.classList.toggle('on', curT > startT);
 
-    console.log(curT);
-    // console.log(endT);
-
-    if(curT > endT && !curP.classList.contains('off')) {
-        curP.classList.add('off');
-    }
-
-    if(curT < endT && curP.classList.contains('off')) {
-        curP.classList.remove('off');
-    }
-
-    if( curT > startT && !curP.classList.contains('on')) {
-        curP.classList.add('on');
-    }
-
-    if( curT < startT && curP.classList.contains('on')) {
-        curP.classList.remove('on');
-    }
         
 }
 
-function sTimes(num,soundStarts,curT) {
-	var soundClass = 'sound' + num;
-	var b = document.querySelector('body');
-	if( curT > soundStarts && !b.classList.contains(soundClass)) {
-		b.classList.add(soundClass);
-	}
-	if( curT < soundStarts && b.classList.contains(soundClass)) {
-		b.classList.remove(soundClass);
-	}
-}
 
 (function() {
 	/**
