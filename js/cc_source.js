@@ -1,15 +1,30 @@
 export const captions = [
     {
-        vtt: "00:00:00.000 --> 00:00:02.320",
+        vtt: "00:00:00.000 --> 00:00:00.800",
         start: "",
         end: "",
         text: [
             {
                 speaker: "Camren",
-                speech: "Ebra, make sandwiches!",
+                speech: "Ebra!",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: "uppercase"
+            }
+        ],
+        cc_class: null
+    },
+    {
+        vtt: "00:00:00.800 --> 00:00:02.320",
+        start: "",
+        end: "",
+        text: [
+            {
+                speaker: "Camren",
+                speech: "Make sandwiches!",
+                emotion: null,
+                text_type: "speech",
+                text_class: "uppercase"
             }
         ],
         cc_class: null
@@ -21,16 +36,16 @@ export const captions = [
         text: [
             {
                 speaker: "Camren",
-                speech: "Don't stop making fucking sandwiches.",
+                speech: "Don't stop. Making. Fucking sandwiches.",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: "uppercase"
             }
         ],
         cc_class: null
     },
     {
-        vtt: "00:00:05.000 --> 00:00:05.300",
+        vtt: "00:00:04.780 --> 00:00:05.300",
         start: "",
         end: "",
         text: [
@@ -51,8 +66,8 @@ export const captions = [
         text: [
             {
                 speaker: "Camren",
-                speech: "I'm going to make three sections, OK?",
-                emotion: null,
+                speech: "Imma make three sections, OK?",
+                emotion: "voice still loud",
                 text_type: "speech",
                 text_class: null
             }
@@ -81,10 +96,17 @@ export const captions = [
         text: [
             {
                 speaker: "Camren",
-                speech: "I'm going to take green tape, make those sections.",
+                speech: "I'm gonna to take green tape, make those sections.",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
+            },
+            {
+                speaker: "Louie",
+                speech: "Yes, Chef.",
+                emotion: "soft",
+                text_type: "speech",
+                text_class: "small"
             }
         ],
         cc_class: null
@@ -111,7 +133,7 @@ export const captions = [
         text: [
             {
                 speaker: "Camren",
-                speech: "put into the corresponding sections.",
+                speech: "put em the corresponding sections, copy?",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -126,23 +148,15 @@ export const captions = [
         text: [
             {
                 speaker: "Louie",
-                speech: "Ok, yeah yeah",
+                speech: "OK, yeah yeah",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
-            }
-        ],
-        cc_class: null
-    },
-    {
-        vtt: "00:00:14.500 --> 00:00:15.100",
-        start: "",
-        end: "",
-        text: [
+            },
             {
                 speaker: "Someone",
                 speech: "Behind!",
-                emotion: null,
+                emotion: "sounding agitated",
                 text_type: "speech",
                 text_class: null
             }
@@ -160,6 +174,13 @@ export const captions = [
                 emotion: null,
                 text_type: "speech",
                 text_class: null
+            },
+            {
+                speaker: "Sydeny",
+                speech: "Behind..!",
+                emotion: "voice distant",
+                text_type: "speech",
+                text_class: "small"
             }
         ],
         cc_class: null
@@ -192,11 +213,11 @@ export const captions = [
         end: "",
         text: [
             {
-                speaker: null,
-                speech: "[inaudible]",
-                emotion: null,
+                speaker: "Camren",
+                speech: "Marcus!",
+                emotion: "distant",
                 text_type: "speech",
-                text_class: null
+                text_class: "uppercase small"
             },
         ],
         cc_class: null
@@ -208,7 +229,7 @@ export const captions = [
         text: [
             {
                 speaker: "Sydney",
-                speech: "Tina, fire every single chicken we have, please.",
+                speech: "[INAUDIBLE] Tina, fire every single chicken we have, please.",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -223,7 +244,7 @@ export const captions = [
         text: [
             {
                 speaker: "Sydney",
-                speech: "OK?",
+                speech: "OK",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -253,10 +274,10 @@ export const captions = [
         text: [
             {
                 speaker: "Richie",
-                speech: "Yes",
-                emotion: null,
+                speech: "Yessss!",
+                emotion: "distant and stressed",
                 text_type: "speech",
-                text_class: null
+                text_class: "small"
             },
         ],
         cc_class: null
@@ -268,10 +289,10 @@ export const captions = [
         text: [
             {
                 speaker: "Richie",
-                speech: "And I know we need them now.",
-                emotion: null,
+                speech: "And I know we need them now!",
+                emotion: "distant and stressed",
                 text_type: "speech",
-                text_class: null
+                text_class: "small"
             },
         ],
         cc_class: null
@@ -283,7 +304,7 @@ export const captions = [
         text: [
             {
                 speaker: "Sydney",
-                speech: "OK.",
+                speech: "OK um",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -313,10 +334,17 @@ export const captions = [
         text: [
             {
                 speaker: "Marcus",
-                speech: "Uh, getting there.",
+                speech: "Uhh, getting there.",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
+            },
+            {
+                speaker: null,
+                speech: "pans clanging",
+                emotion: null,
+                text_type: "sound",
+                text_class: "audio"
             },
         ],
         cc_class: null
@@ -329,9 +357,16 @@ export const captions = [
             {
                 speaker: "Sydney",
                 speech: "Getting there?",
-                emotion: null,
+                emotion: "shocked",
                 text_type: "speech",
                 text_class: null
+            },
+            {
+                speaker: null,
+                speech: "more pans clanging",
+                emotion: null,
+                text_type: "sound",
+                text_class: "audio"
             },
         ],
         cc_class: null
@@ -358,7 +393,7 @@ export const captions = [
         text: [
             {
                 speaker: "Sydney",
-                speech: "Marcus, what the fuck are you doing",
+                speech: "Marcus, whaat the <strong><em>fuck<em></strong> are you doing",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -388,11 +423,11 @@ export const captions = [
         text: [
             {
                 speaker: "Marcus",
-                speech: "Yo, come on.",
+                speech: "Yo, c'mon--",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
-            },
+            }
         ],
         cc_class: null
     },
@@ -412,28 +447,27 @@ export const captions = [
         cc_class: null
     },
     {
-        vtt: "00:00:36.760 --> 00:00:37.747",
+        vtt: "00:00:36.760 --> 00:00:38.880",
         start: "",
         end: "",
         text: [
+             {
+                speaker: "Sydney",
+                speech: "Come on..?! What--",
+                emotion: "getting mad",
+                text_type: "speech",
+                text_class: null
+            },
             {
                 speaker: "Marcus",
-                speech: "The cakes are in the oven.",
+                speech: "The cakes are <em>in the oven</em>.",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
             },
-        ],
-        cc_class: null
-    },
-    {
-        vtt: "00:00:37.747 --> 00:00:38.880",
-        start: "",
-        end: "",
-        text: [
             {
                 speaker: "Sydney",
-                speech: "What the fuck am I tripping for?",
+                speech: "-- fuck AM I tripping for?(!)",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -470,7 +504,7 @@ export const captions = [
         text: [
             {
                 speaker: "Sydney",
-                speech: "There's four cakes. And still--",
+                speech: "There's four cakes, and still--",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -485,7 +519,7 @@ export const captions = [
         text: [
             {
                 speaker: "Marcus",
-                speech: "Yeah, I was going to cut them.",
+                speech: "YEAH! I was going to cut them.",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -500,8 +534,8 @@ export const captions = [
         text: [
             {
                 speaker: "Sydney",
-                speech: "They're not even cut yet?",
-                emotion: null,
+                speech: "They're not even cut yet?(!)",
+                emotion: "serious tone",
                 text_type: "speech",
                 text_class: null
             },
@@ -531,16 +565,16 @@ export const captions = [
             {
                 speaker: "Camren",
                 speech: "What's this?",
-                emotion: null,
+                emotion: "in the back",
                 text_type: "speech",
                 text_class: null
             },
             {
                 speaker: "Camren",
                 speech: "Chef!",
-                emotion: null,
+                emotion: "angry",
                 text_type: "speech",
-                text_class: null
+                text_class: "uppercase shouting"
             },
         ],
         cc_class: null
@@ -552,7 +586,7 @@ export const captions = [
         text: [
             {
                 speaker: "Sydney",
-                speech: "Um, I am--",
+                speech: "Um, I am um--",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -581,12 +615,19 @@ export const captions = [
         end: "",
         text: [
             {
+                speaker: "Camren",
+                speech: "No, no stop",
+                emotion: null,
+                text_type: "speech",
+                text_class: null
+            },
+            {
                 speaker: "Sydney",
                 speech: "I'm going to order of them in fives, so--",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
-            },
+            }
         ],
         cc_class: null
     },
@@ -597,7 +638,7 @@ export const captions = [
         text: [
             {
                 speaker: "Camren",
-                speech: "No, stop. Everything.",
+                speech: "Everything. Fire everything",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -612,7 +653,7 @@ export const captions = [
         text: [
             {
                 speaker: "Camren",
-                speech: "Fire everything right fucking now.",
+                speech: "Right fucking now.",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -647,6 +688,13 @@ export const captions = [
                 text_type: "speech",
                 text_class: null
             },
+            {
+                speaker: "Camren",
+                speech: "Step out.",
+                emotion: null,
+                text_type: "speech",
+                text_class: null
+            },
         ],
         cc_class: null
     },
@@ -664,7 +712,7 @@ export const captions = [
             },
             {
                 speaker: "Sydney",
-                speech: "OK.",
+                speech: "Okay..",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -673,13 +721,20 @@ export const captions = [
         cc_class: null
     },
     {
-        vtt: "00:00:57.180 --> 00:00:58.220",
+        vtt: "00:00:57.180 --> 00:00:58.120",
         start: "",
         end: "",
         text: [
             {
                 speaker: "Sydney",
-                speech: "I'm going to talk to Marcus.",
+                speech: "I'm going to talk to Marcus and--",
+                emotion: null,
+                text_type: "speech",
+                text_class: null
+            },
+            {
+                speaker: "Camren",
+                speech: "Step out--",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -688,16 +743,16 @@ export const captions = [
         cc_class: null
     },
     {
-        vtt: "00:00:58.220 --> 00:01:01.230",
+        vtt: "00:00:58.120 --> 00:01:01.230",
         start: "",
         end: "",
         text: [
             {
                 speaker: "Camren",
-                speech: "Step out-- get the fuck off my expo, Chef, now!",
+                speech: "Get the fuck off my expo, Chef, now!",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: "uppercase shouting"
             },
         ],
         cc_class: null
@@ -712,7 +767,7 @@ export const captions = [
                 speech: "Get the fuck off!",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: "uppercase shouting"
             },
         ],
         cc_class: null
@@ -724,10 +779,10 @@ export const captions = [
         text: [
             {
                 speaker: "Camren",
-                speech: "Thank you.",
+                speech: "Thank you",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: "uppercase shouting"
             },
         ],
         cc_class: null
@@ -740,9 +795,9 @@ export const captions = [
             {
                 speaker: "Camren",
                 speech: "We're firing 76 beefs, 34 chickens--",
-                emotion: null,
+                emotion: "to everyone",
                 text_type: "speech",
-                text_class: null
+                text_class: "uppercase shouting"
             },
         ],
         cc_class: null
@@ -757,7 +812,7 @@ export const captions = [
                 speech: "OK-- 12 french fries, 12 mash, fucking now!",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: "uppercase shouting"
             },
         ],
         cc_class: null
@@ -770,7 +825,7 @@ export const captions = [
             {
                 speaker: "Everyone",
                 speech: "Yes, chef.",
-                emotion: null,
+                emotion: "sounding tired",
                 text_type: "speech",
                 text_class: null
             },
@@ -784,8 +839,8 @@ export const captions = [
         text: [
             {
                 speaker: "Camren",
-                speech: "Thank you.",
-                emotion: null,
+                speech: "Thaankk youuu.",
+                emotion: "annoyed",
                 text_type: "speech",
                 text_class: null
             },
@@ -799,7 +854,7 @@ export const captions = [
         text: [
             {
                 speaker: "Richie",
-                speech: "Behind.",
+                speech: "Behind...",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -814,7 +869,7 @@ export const captions = [
         text: [
             {
                 speaker: "Richie",
-                speech: "Corner.",
+                speech: "Corner--",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -823,31 +878,23 @@ export const captions = [
         cc_class: null
     },
     {
-        vtt: "00:01:16.580 --> 00:01:17.380",
+        vtt: "00:01:16.580 --> 00:01:18.320",
         start: "",
         end: "",
         text: [
             {
                 speaker: "Richie",
-                speech: "Oh.",
+                speech: "Oh!",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
             },
-        ],
-        cc_class: null
-    },
-    {
-        vtt: "00:01:17.380 --> 00:01:18.320",
-        start: "",
-        end: "",
-        text: [
             {
                 speaker: null,
-                speech: "[CLATTERING]",
+                speech: "clattering",
                 emotion: null,
-                text_type: "speech",
-                text_class: null
+                text_type: "sound",
+                text_class: "audio"
             },
         ],
         cc_class: null
@@ -859,8 +906,8 @@ export const captions = [
         text: [
             {
                 speaker: "Sydney",
-                speech: "Oh, shit.",
-                emotion: null,
+                speech: "Ohhh, shit.",
+                emotion: "annoyed",
                 text_type: "speech",
                 text_class: null
             },
@@ -894,6 +941,13 @@ export const captions = [
                 text_type: "speech",
                 text_class: null
             },
+            {
+                speaker: "Sydney",
+                speech: "(sighs)",
+                emotion: null,
+                text_type: "speech",
+                text_class: null
+            },
         ],
         cc_class: null
     },
@@ -904,7 +958,7 @@ export const captions = [
         text: [
             {
                 speaker: "Sydney",
-                speech: "Fuck you, Richie.",
+                speech: "Fuck. You. Richie",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -1030,26 +1084,18 @@ export const captions = [
         end: "",
         text: [
             {
-                speaker: "Camren",
-                speech: "Sydney.",
+                speaker: "Sydney",
+                speech: "Fuck you",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
             },
-        ],
-        cc_class: null
-    },
-    {
-        vtt: "00:01:37.690 --> 00:01:38.600",
-        start: "",
-        end: "",
-        text: [
             {
-                speaker: "Sydney",
-                speech: "Fuck you.",
-                emotion: null,
+                speaker: "Camren",
+                speech: "Sydney!",
+                emotion: "nearby",
                 text_type: "speech",
-                text_class: null
+                text_class: "uppercase"
             },
         ],
         cc_class: null
@@ -1060,7 +1106,7 @@ export const captions = [
         end: "",
         text: [
             {
-                speaker: "Camren",
+                speaker: "Someone",
                 speech: "I like that pace, Louie.",
                 emotion: null,
                 text_type: "speech",
@@ -1091,10 +1137,10 @@ export const captions = [
         text: [
             {
                 speaker: null,
-                speech: "[PHONE RINGING]",
+                speech: "phone ringing",
                 emotion: null,
-                text_type: "speech",
-                text_class: null
+                text_type: "sound",
+                text_class: "audio"
             },
         ],
         cc_class: null
@@ -1106,10 +1152,10 @@ export const captions = [
         text: [
             {
                 speaker: null,
-                speech: "[BELL DINGS]",
+                speech: "bell dings",
                 emotion: null,
-                text_type: "speech",
-                text_class: null
+                text_type: "sound",
+                text_class: "audio"
             },
         ],
         cc_class: null

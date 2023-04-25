@@ -37,15 +37,21 @@ function insertCaptions(captionsObject){
         const textEl = document.createElement('div');
         textEl.classList.add('p' + key);
         textEl.classList.add('cc__item');
+
+		if (captionItem.cc_class) {
+			textEl.classList.add(`${captionItem.cc_class}`);
+		}
+
         textEl.setAttribute('data-cc-item', '');
 
 		let htmlString = '';
 
 		captionItem.text.forEach((textObject) => {
 			htmlString += `
-				<p>
-					<span class="speaker">${textObject.speaker}:</span>
-					<span>${textObject.speech}</span>
+				<p ${ textObject.text_class ? 'class="' + textObject.text_class  + '"' : ''}>
+				
+					${ textObject.speaker ? '<span class="cc__speaker">' + textObject.speaker + (textObject.emotion ? '<span class="cc__extra">(' + textObject.emotion + ')</span>' : '') + ':</span>' : '' }
+					<span class="cc__text">${textObject.text_type == 'sound' ? '[' : ''}${textObject.speech}${textObject.text_type == 'sound' ? ']' : ''}</span>
 				</p>
 			`;
 		});

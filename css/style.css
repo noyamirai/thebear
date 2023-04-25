@@ -190,25 +190,42 @@ main {
 
       opacity: 0;
       transition: .05s;
+
+      max-width: 80%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .cc .cc__item p {
+    .cc__item p {
+      width: max-content;
       padding: .3rem .5rem;
 
       border-radius: .15rem;
       background-color: rgba(0, 0, 0, .5);
     }
 
-    .cc .cc__item.on {
+    .cc__item.on {
       opacity: 1;
     }
 
-    .cc .cc__item.off {
+    .cc__item.on + .cc__item.on {
+      margin-top: .75rem;
+    }
+
+    .cc__item.off {
       transition: .05s;
       opacity: 0;
     }
 
-    .speaker {
+    .cc__speaker {
       font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .uppercase .cc__text,
+    .audio .cc__text,
+    .cc__extra {
       text-transform: uppercase;
     }
