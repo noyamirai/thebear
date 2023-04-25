@@ -9,13 +9,13 @@ export const captions = [
                 speech: "Ebra!",
                 emotion: null,
                 text_type: "speech",
-                text_class: "uppercase"
+                text_class: "uppercase shouting"
             }
         ],
         cc_class: null
     },
     {
-        vtt: "00:00:00.800 --> 00:00:02.320",
+        vtt: "00:00:00.800 --> 00:00:02.290",
         start: "",
         end: "",
         text: [
@@ -24,22 +24,52 @@ export const captions = [
                 speech: "Make sandwiches!",
                 emotion: null,
                 text_type: "speech",
-                text_class: "uppercase"
+                text_class: "uppercase shouting"
             }
         ],
         cc_class: null
     },
     {
-        vtt: "00:00:02.320 --> 00:00:04.760",
+        vtt: "00:00:02.290 --> 00:00:03.000",
         start: "",
         end: "",
         text: [
             {
                 speaker: "Camren",
-                speech: "Don't stop. Making. Fucking sandwiches.",
+                speech: "Don't stop",
                 emotion: null,
                 text_type: "speech",
-                text_class: "uppercase"
+                text_class: "uppercase shouting"
+            }
+        ],
+        cc_class: null
+    },
+    {
+        vtt: "00:00:03.000 --> 00:00:03.700",
+        start: "",
+        end: "",
+        text: [
+            {
+                speaker: "Camren",
+                speech: "Making",
+                emotion: null,
+                text_type: "speech",
+                text_class: "uppercase shouting"
+            }
+        ],
+        cc_class: null
+    },
+    {
+        vtt: "00:00:03.700 --> 00:00:04.760",
+        start: "",
+        end: "",
+        text: [
+            {
+                speaker: "Camren",
+                speech: "Fucking sandwiches",
+                emotion: null,
+                text_type: "speech",
+                text_class: "uppercase shouting"
             }
         ],
         cc_class: null
@@ -75,13 +105,43 @@ export const captions = [
         cc_class: null
     },
     {
-        vtt: "00:00:06.870 --> 00:00:09.313",
+        vtt: "00:00:06.870 --> 00:00:07.750",
         start: "",
         end: "",
         text: [
             {
                 speaker: "Camren",
-                speech: "They're going to be Wet, Hot, and Sweet, all right?",
+                speech: "They're gonna be <strong><em>Wet</em></strong>",
+                emotion: null,
+                text_type: "speech",
+                text_class: null
+            }
+        ],
+        cc_class: null
+    },
+    {
+        vtt: "00:00:07.750 --> 00:00:08.300",
+        start: "",
+        end: "",
+        text: [
+            {
+                speaker: "Camren",
+                speech: "<strong><em>Hot</em></strong>",
+                emotion: null,
+                text_type: "speech",
+                text_class: null
+            }
+        ],
+        cc_class: null
+    },
+    {
+        vtt: "00:00:08.300 --> 00:00:09.313",
+        start: "",
+        end: "",
+        text: [
+            {
+                speaker: "Camren",
+                speech: "and <strong><em>Sweet</em></strong>, all right?",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -100,13 +160,6 @@ export const captions = [
                 emotion: null,
                 text_type: "speech",
                 text_class: null
-            },
-            {
-                speaker: "Louie",
-                speech: "Yes, Chef.",
-                emotion: "soft",
-                text_type: "speech",
-                text_class: "small"
             }
         ],
         cc_class: null
@@ -121,19 +174,31 @@ export const captions = [
                 speech: "Louie, I want you to get the sandwiches",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
-            }
+                text_class: null,
+                start: "00:00:10.980",
+                end: "00:00:12.630"
+            },
+            {
+                speaker: "Louie",
+                speech: "Yes, Chef.",
+                emotion: "soft",
+                text_type: "speech",
+                text_class: "small",
+                start: "00:00:11.200",
+                end: "00:00:11.850"
+            },
+            
         ],
         cc_class: null
     },
     {
-        vtt: "00:00:12.630 --> 00:00:13.960",
+        vtt: "00:00:12.630 --> 00:00:13.990",
         start: "",
         end: "",
         text: [
             {
                 speaker: "Camren",
-                speech: "put em the corresponding sections, copy?",
+                speech: "put em in the corresponding sections, copy?",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -142,7 +207,7 @@ export const captions = [
         cc_class: null
     },
     {
-        vtt: "00:00:13.960 --> 00:00:14.760",
+        vtt: "00:00:13.990 --> 00:00:14.800",
         start: "",
         end: "",
         text: [
@@ -151,36 +216,44 @@ export const captions = [
                 speech: "OK, yeah yeah",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: null,
+                start: "00:00:13.990",
+                end: "00:00:15.000"
             },
-            {
-                speaker: "Someone",
-                speech: "Behind!",
-                emotion: "sounding agitated",
-                text_type: "speech",
-                text_class: null
-            }
         ],
         cc_class: null
     },
     {
-        vtt: "00:00:15.000 --> 00:00:17.320",
+        vtt: "00:00:14.800 --> 00:00:17.320",
         start: "",
         end: "",
         text: [
             {
                 speaker: "Camren",
-                speech: "Yo, Sweeps, bag, Sharpie, label that shit.",
+                speech: "Yo!",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: null,
+                start: "00:00:14.800",
+                end: "00:00:15.400"
+            },
+            {
+                speaker: "Camren",
+                speech: "Sweeps, bag, Sharpie, label that shit.",
+                emotion: null,
+                text_type: "speech",
+                text_class: null,
+                start: "00:00:15.400",
+                end: "00:00:17.320"
             },
             {
                 speaker: "Sydeny",
                 speech: "Behind..!",
                 emotion: "voice distant",
                 text_type: "speech",
-                text_class: "small"
+                text_class: "small",
+                start: "00:00:15.500",
+                end: "00:00:16.400"
             }
         ],
         cc_class: null
@@ -195,14 +268,18 @@ export const captions = [
                 speech: "Please, Chef",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: null,
+                start: "00:00:17.320",
+                end: "00:00:17.800"
             },
             {
                 speaker: "Sweeps",
                 speech: "Yes, Chef.",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: null,
+                start: "00:00:17.800",
+                end: "00:00:18.780"
             },
         ],
         cc_class: null
@@ -217,7 +294,7 @@ export const captions = [
                 speech: "Marcus!",
                 emotion: "distant",
                 text_type: "speech",
-                text_class: "uppercase small"
+                text_class: "uppercase small shouting"
             },
         ],
         cc_class: null
@@ -229,7 +306,7 @@ export const captions = [
         text: [
             {
                 speaker: "Sydney",
-                speech: "[INAUDIBLE] Tina, fire every single chicken we have, please.",
+                speech: "Tina, fire every single chicken we have, please.",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -290,7 +367,7 @@ export const captions = [
             {
                 speaker: "Richie",
                 speech: "And I know we need them now!",
-                emotion: "distant and stressed",
+                emotion: null,
                 text_type: "speech",
                 text_class: "small"
             },
@@ -328,7 +405,7 @@ export const captions = [
         cc_class: null
     },
     {
-        vtt: "00:00:28.710 --> 00:00:29.650",
+        vtt: "00:00:28.710 --> 00:00:29.850",
         start: "",
         end: "",
         text: [
@@ -337,20 +414,24 @@ export const captions = [
                 speech: "Uhh, getting there.",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: null,
+                start: "00:00:28.710",
+                end: "00:00:29.850"
             },
             {
                 speaker: null,
                 speech: "pans clanging",
                 emotion: null,
                 text_type: "sound",
-                text_class: "audio"
+                text_class: "audio",
+                start: "00:00:29.200",
+                end: "00:00:29.850"
             },
         ],
         cc_class: null
     },
     {
-        vtt: "00:00:29.650 --> 00:00:30.450",
+        vtt: "00:00:29.850 --> 00:00:30.450",
         start: "",
         end: "",
         text: [
@@ -359,15 +440,17 @@ export const captions = [
                 speech: "Getting there?",
                 emotion: "shocked",
                 text_type: "speech",
-                text_class: null
+                text_class: null,
+                start: "00:00:29.650",
+                end: "00:00:30.450"
             },
-            {
-                speaker: null,
-                speech: "more pans clanging",
-                emotion: null,
-                text_type: "sound",
-                text_class: "audio"
-            },
+            // {
+            //     speaker: null,
+            //     speech: "more pans clanging",
+            //     emotion: null,
+            //     text_type: "sound",
+            //     text_class: "audio"
+            // },
         ],
         cc_class: null
     },
@@ -453,7 +536,7 @@ export const captions = [
         text: [
              {
                 speaker: "Sydney",
-                speech: "Come on..?! What--",
+                speech: "Come on..?! What fuck AM I tripping for?!",
                 emotion: "getting mad",
                 text_type: "speech",
                 text_class: null
@@ -461,13 +544,6 @@ export const captions = [
             {
                 speaker: "Marcus",
                 speech: "The cakes are <em>in the oven</em>.",
-                emotion: null,
-                text_type: "speech",
-                text_class: null
-            },
-            {
-                speaker: "Sydney",
-                speech: "-- fuck AM I tripping for?(!)",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -543,7 +619,7 @@ export const captions = [
         cc_class: null
     },
     {
-        vtt: "00:00:44.180 --> 00:00:45.380",
+        vtt: "00:00:44.180 --> 00:00:45.500",
         start: "",
         end: "",
         text: [
@@ -552,29 +628,42 @@ export const captions = [
                 speech: "Yeah, it's not that big of a deal.",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: null,
+                start: "00:00:44.180",
+                end: "00:00:45.380"
             },
-        ],
-        cc_class: null
-    },
-    {
-        vtt: "00:00:45.380 --> 00:00:46.190",
-        start: "",
-        end: "",
-        text: [
+            {
+                speaker: "Camren",
+                speech: "Yo, What's this?",
+                emotion: "in the back",
+                text_type: "speech",
+                text_class: "small",
+                start: "00:00:44.300",
+                end: "00:00:45.250"
+            },
             {
                 speaker: "Camren",
                 speech: "What's this?",
                 emotion: "in the back",
                 text_type: "speech",
-                text_class: null
+                text_class: "small",
+                start: "00:00:45.250",
+                end: "00:00:45.500"
             },
+        ],
+        cc_class: null
+    },
+    {
+        vtt: "00:00:45.500 --> 00:00:46.190",
+        start: "",
+        end: "",
+        text: [
             {
                 speaker: "Camren",
                 speech: "Chef!",
                 emotion: "angry",
                 text_type: "speech",
-                text_class: "uppercase shouting"
+                text_class: "uppercase shouting",
             },
         ],
         cc_class: null
@@ -686,14 +775,18 @@ export const captions = [
                 speech: "I just was finishing talking to Marcus and--",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: null,
+                start: "00:00:53.940",
+                end: "00:00:55.920"
             },
             {
                 speaker: "Camren",
                 speech: "Step out.",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: null,
+                start: "00:00:54.520",
+                end: "00:00:55.200"
             },
         ],
         cc_class: null
@@ -708,14 +801,18 @@ export const captions = [
                 speech: "Step out.",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: null,
+                start: "00:00:55.920",
+                end: "00:00:56.400"
             },
             {
                 speaker: "Sydney",
                 speech: "Okay..",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: null,
+                start: "00:00:56.700",
+                end: "00:00:57.180"
             },
         ],
         cc_class: null
@@ -730,35 +827,50 @@ export const captions = [
                 speech: "I'm going to talk to Marcus and--",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: null,
+                start: "00:00:57.180",
+                end: "00:00:58.120"
             },
             {
                 speaker: "Camren",
                 speech: "Step out--",
                 emotion: null,
                 text_type: "speech",
-                text_class: null
+                text_class: null,
+                start: "00:00:57.800",
+                end: "00:00:58.120"
             },
         ],
         cc_class: null
     },
     {
-        vtt: "00:00:58.120 --> 00:01:01.230",
+        vtt: "00:00:58.120 --> 00:01:01.100",
         start: "",
         end: "",
         text: [
             {
                 speaker: "Camren",
-                speech: "Get the fuck off my expo, Chef, now!",
+                speech: "Get the fuck off my expo Chef",
                 emotion: null,
                 text_type: "speech",
-                text_class: "uppercase shouting"
+                text_class: "uppercase shouting",
+                start: "00:00:58.120",
+                end: "00:00:59.700"
+            },
+            {
+                speaker: "Camren",
+                speech: "Now!",
+                emotion: null,
+                text_type: "speech",
+                text_class: "uppercase shouting",
+                start: "00:00:59.700",
+                end: "00:01:01.000"
             },
         ],
         cc_class: null
     },
     {
-        vtt: "00:01:01.230 --> 00:01:02.670",
+        vtt: "00:01:01.100 --> 00:01:02.670",
         start: "",
         end: "",
         text: [
@@ -782,37 +894,77 @@ export const captions = [
                 speech: "Thank you",
                 emotion: null,
                 text_type: "speech",
-                text_class: "uppercase shouting"
+                text_class: "uppercase"
             },
         ],
         cc_class: null
     },
     {
-        vtt: "00:01:03.900 --> 00:01:08.160",
+        vtt: "00:01:03.900 --> 00:01:08.460",
         start: "",
         end: "",
         text: [
             {
                 speaker: "Camren",
-                speech: "We're firing 76 beefs, 34 chickens--",
-                emotion: "to everyone",
-                text_type: "speech",
-                text_class: "uppercase shouting"
-            },
-        ],
-        cc_class: null
-    },
-    {
-        vtt: "00:01:08.160 --> 00:01:12.360",
-        start: "",
-        end: "",
-        text: [
-            {
-                speaker: "Camren",
-                speech: "OK-- 12 french fries, 12 mash, fucking now!",
+                speech: "We're firing",
                 emotion: null,
                 text_type: "speech",
-                text_class: "uppercase shouting"
+                text_class: "uppercase shouting",
+                start: "00:01:03.900",
+                end: "00:01:04.800"
+            },
+            {
+                speaker: "Camren",
+                speech: "76 beefs",
+                emotion: null,
+                text_type: "speech",
+                text_class: "uppercase shouting",
+                start: "00:01:04.800",
+                end: "00:01:06.400"
+            },
+            {
+                speaker: "Camren",
+                speech: "34 chickens, Okay?",
+                emotion: null,
+                text_type: "speech",
+                text_class: "uppercase shouting",
+                start: "00:01:06.400",
+                end: "00:01:08.460"
+            },
+        ],
+        cc_class: null
+    },
+    {
+        vtt: "00:01:08.460 --> 00:01:12.360",
+        start: "",
+        end: "",
+        text: [
+            {
+                speaker: "Camren",
+                speech: "12 french fries",
+                emotion: null,
+                text_type: "speech",
+                text_class: "uppercase shouting",
+                start: "00:01:08.460",
+                end: "00:01:09.650"
+            },
+            {
+                speaker: "Camren",
+                speech: "12 mash",
+                emotion: null,
+                text_type: "speech",
+                text_class: "uppercase shouting",
+                start: "00:01:09.650",
+                end: "00:01:10.900"
+            },
+            {
+                speaker: "Camren",
+                speech: "Fucking now!",
+                emotion: null,
+                text_type: "speech",
+                text_class: "uppercase shouting",
+                start: "00:01:10.900",
+                end: "00:01:12.360"
             },
         ],
         cc_class: null
@@ -848,7 +1000,7 @@ export const captions = [
         cc_class: null
     },
     {
-        vtt: "00:01:14.570 --> 00:01:15.780",
+        vtt: "00:01:14.570 --> 00:01:15.280",
         start: "",
         end: "",
         text: [

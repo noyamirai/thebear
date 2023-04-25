@@ -10,6 +10,10 @@ window.onYouTubeIframeAPIReady = function () {
 		videoId: '1K3z62yoiOA',
 		playerVars: {
 			color: 'white',
+			'autoplay': 0,
+			'rel' : 0,
+			'fs' : 0,
+			controls: 0,
 			//start: 
 			//autoplay: '1'
 			//playlist: 'taJ60kskkns,FG0fTKAqZ5g'
@@ -36,8 +40,8 @@ function insertCaptions(captionsObject){
         const captionItem = captionsObject[key];
 
         const textEl = document.createElement('div');
-        textEl.classList.add('p' + key);
         textEl.classList.add('cc__item');
+        textEl.classList.add('cc__item--' + key);
 
 		if (captionItem.cc_class) {
 			textEl.classList.add(`${captionItem.cc_class}`);
@@ -47,11 +51,11 @@ function insertCaptions(captionsObject){
 
 		let htmlString = '';
 
-		captionItem.text.forEach((textObject) => {
+		captionItem.text.forEach((textObject,i) => {
 			htmlString += `
-				<p ${ textObject.text_class ? 'class="' + textObject.text_class  + '"' : ''}>
+				<p class="p${i} ${ textObject.text_class ?  textObject.text_class : ''}">
 				
-					${ textObject.speaker ? '<span class="cc__speaker">' + textObject.speaker + (textObject.emotion ? '<span class="cc__extra">(' + textObject.emotion + ')</span>' : '') + ':</span>' : '' }
+					${ textObject.speaker ? '<span class="cc__speaker">' + textObject.speaker + (textObject.emotion ? ' <span class="cc__extra">(' + textObject.emotion + ')</span>' : '') + ':</span>' : '' }
 					<span class="cc__text">${textObject.text_type == 'sound' ? '[' : ''}${textObject.speech}${textObject.text_type == 'sound' ? ']' : ''}</span>
 				</p>
 			`;
@@ -71,32 +75,78 @@ function updateTimerDisplay(captions){
 	var t = player.getCurrentTime();
 	t = Math.floor10(t,-1);
 
-	//Officer K D 6 - 3 . 7. Let’s begin. Ready?
 	var i = 0;
+
 	while( i < captions.length) {
-		pTimes(i,captions[i].start, captions[i].end,t);
+		const caption = captions[i];
+		let textIndex = 0;
+
+		while (textIndex < caption.text.length) {
+			const textObject = caption.text[textIndex];
+			// console.log(textObject);
+			pTimes(
+				i,
+				caption.start,
+				caption.end,
+				t,
+				textObject.start ?? null,
+				textObject.end ?? null,
+				textIndex
+			);
+
+			textIndex++;
+		}
+
 		i++;
 	}
 
-	var i = 0;
-
-    // Change 136.1 to the length of your own video in seconds
 	if ( t < 120.6) {
 		setTimeout(() => {
 			updateTimerDisplay(captions);
 		}, 100);
-	}
-	
+	}	
 }
-function pTimes(num,startT,endT,curT) {
-	// var curP = document.querySelector('.p' + num);
+
+function pTimes(num, startTime, endTime, currentTime, textStartTime, textEndTime, textIndex) {
+	console.log(currentTime);
 
 	// credits naar nina
-	const curP = document.querySelector(`.p${num}`);
-	curP.classList.toggle('off', curT > endT);
-	curP.classList.toggle('on', curT > startT);
+	const ccContainer = document.querySelector(`.cc__item--${num}`);
+	const ccTextItem = ccContainer.querySelectorAll('p');
 
-        
+	ccContainer.classList.toggle('off', currentTime > endTime);
+	ccContainer.classList.toggle('on', currentTime > startTime);
+
+	ccTextItem.forEach((textItem, i) => {
+
+		if (textStartTime && textEndTime) {
+			if (i == textIndex) {
+				
+				if (currentTime > textStartTime && currentTime < textEndTime) {
+					console.log('JAAA SHOW ON!!');
+			
+					textItem.classList.remove('off'); // remove the 'off' class if it was previously added
+					textItem.classList.add('on');
+
+				} else if (currentTime > textEndTime && !textItem.classList.contains('off')) { // check if the 'off' class has already been added
+					console.log('HIDE!');
+					
+					textItem.classList.remove('on'); // remove the 'on' class if it was previously added
+					textItem.classList.add('off');
+				}
+			}
+			// textItem.classList.toggle('off', currentTime > textEndTime);
+			// textItem.classList.toggle('on', currentTime > textStartTime && currentTime < textEndTime);
+
+			
+			
+		} else {
+			textItem.classList.toggle('off', currentTime > endTime);
+			textItem.classList.toggle('on', currentTime > startTime);
+		}
+
+	});
+
 }
 
 

@@ -10,6 +10,15 @@ export async function getCaptions() {
 		item.start = startTime;
 		item.end = endTime;
 
+		item.text = item.text.map((textObject) => {
+			if (textObject.start !== undefined && textObject.end !== undefined) {
+				textObject.start = vttTimestampToSeconds(textObject.start);
+				textObject.end = vttTimestampToSeconds(textObject.end);
+			}
+
+			return textObject;
+		})
+
 		return item;
 	});
 
