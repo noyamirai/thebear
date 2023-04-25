@@ -1,6 +1,7 @@
 var player;
+let intervalId;
+let startedInterval = false;
 
-console.log('HALLO');
 import { getCaptions } from "./captions.js";
 
 window.onYouTubeIframeAPIReady = function () {
@@ -13,15 +14,25 @@ window.onYouTubeIframeAPIReady = function () {
 			'autoplay': 0,
 			'rel' : 0,
 			'fs' : 0,
-			controls: 0,
+			// controls: 0,
 			//start: 
 			//autoplay: '1'
 			//playlist: 'taJ60kskkns,FG0fTKAqZ5g'
 		},
 		events: {
-			onReady: initialize
+			onReady: initialize,
+			onStateChange: onPlayerStateChange
 		}
 	});
+}
+
+function onPlayerStateChange(event) {
+	if (event.data == YT.PlayerState.PAUSED) {
+		triggerRing(null, true);
+	} else if (event.data == YT.PlayerState.PLAYING) {
+		startAni();
+		triggerRing(startAni);
+	}
 }
 
 async function initialize(){
@@ -52,13 +63,22 @@ function insertCaptions(captionsObject){
 		let htmlString = '';
 
 		captionItem.text.forEach((textObject,i) => {
-			htmlString += `
-				<p class="p${i} ${ textObject.text_class ?  textObject.text_class : ''}">
-				
-					${ textObject.speaker ? '<span class="cc__speaker">' + textObject.speaker + (textObject.emotion ? ' <span class="cc__extra">(' + textObject.emotion + ')</span>' : '') + ':</span>' : '' }
-					<span class="cc__text">${textObject.text_type == 'sound' ? '[' : ''}${textObject.speech}${textObject.text_type == 'sound' ? ']' : ''}</span>
-				</p>
-			`;
+
+			if (textObject.text_type != 'icon') {
+				htmlString += `
+					<p class="p${i} ${ textObject.text_class ?  textObject.text_class : ''}">
+					
+						${ textObject.speaker ? '<span class="cc__speaker">' + textObject.speaker + (textObject.emotion ? ' <span class="cc__extra">(' + textObject.emotion + ')</span>' : '') + ':</span>' : '' }
+						<span class="cc__text">${textObject.text_type == 'sound' ? '[' : ''}${textObject.speech}${textObject.text_type == 'sound' ? ']' : ''}</span>
+					</p>
+				`;
+			} else {
+				htmlString += `
+					<p class="p${i} icon">	
+						${textObject.speech}				
+					</p>
+				`;
+			}
 		});
 
         textEl.innerHTML = htmlString;
@@ -71,13 +91,51 @@ function insertCaptions(captionsObject){
 	updateTimerDisplay(captionsObject);
 }
 
+function triggerRing (startAni, cancel = false) {
+
+	if (cancel) {
+		const phoneCont = document.querySelector('.icon--phone');
+		phoneCont.classList.add('hide');
+
+		clearInterval(intervalId);
+		return;
+	}
+
+  intervalId = setInterval(() => {
+    startAni();
+  }, 3000);
+
+}
+
+function startAni() {
+	const phoneCont = document.querySelector('.icon--phone');
+
+	phoneCont.classList.remove('hide');
+	phoneCont.classList.add('active');
+
+	// Remove the "box" class from the box element after the animation finishes
+	setTimeout(() => {
+		phoneCont.classList.remove('active');
+	}, 1000);
+	console.log('start ani here');
+}
+
 function updateTimerDisplay(captions){
 	var t = player.getCurrentTime();
 	t = Math.floor10(t,-1);
 
 	var i = 0;
 
+	if (t>0 && !startedInterval) {
+		startAni();
+		triggerRing(startAni);
+		startedInterval = true;
+	} else if (t==0) {
+		triggerRing(null, true)
+	}
+
 	while( i < captions.length) {
+
 		const caption = captions[i];
 		let textIndex = 0;
 

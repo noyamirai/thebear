@@ -75,7 +75,7 @@ export const captions = [
         cc_class: null
     },
     {
-        vtt: "00:00:04.780 --> 00:00:05.300",
+        vtt: "00:00:04.780 --> 00:00:05.150",
         start: "",
         end: "",
         text: [
@@ -90,14 +90,14 @@ export const captions = [
         cc_class: null
     },
     {
-        vtt: "00:00:05.300 --> 00:00:06.870",
+        vtt: "00:00:05.150 --> 00:00:06.870",
         start: "",
         end: "",
         text: [
             {
                 speaker: "Camren",
                 speech: "Imma make three sections, OK?",
-                emotion: "voice still loud",
+                emotion: null,
                 text_type: "speech",
                 text_class: null
             }
@@ -135,7 +135,7 @@ export const captions = [
         cc_class: null
     },
     {
-        vtt: "00:00:08.300 --> 00:00:09.313",
+        vtt: "00:00:08.300 --> 00:00:09.200",
         start: "",
         end: "",
         text: [
@@ -150,13 +150,13 @@ export const captions = [
         cc_class: null
     },
     {
-        vtt: "00:00:09.313 --> 00:00:10.980",
+        vtt: "00:00:09.200 --> 00:00:10.980",
         start: "",
         end: "",
         text: [
             {
                 speaker: "Camren",
-                speech: "I'm gonna to take green tape, make those sections.",
+                speech: "I'm gonna take green tape, make those sections.",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -476,7 +476,7 @@ export const captions = [
         text: [
             {
                 speaker: "Sydney",
-                speech: "Marcus, whaat the <strong><em>fuck<em></strong> are you doing",
+                speech: "Marcus, whaat the <strong><em>fuck</em></strong> are you doing",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
@@ -535,14 +535,21 @@ export const captions = [
         end: "",
         text: [
              {
-                speaker: "Sydney",
-                speech: "Come on..?! What fuck AM I tripping for?!",
-                emotion: "getting mad",
+                speaker: null,
+                speech: '<i class="fa-solid fa-comments"></i><span>Talking over eachother</span>',
+                emotion: null,
+                text_type: "icon",
+                text_class: null
+            },
+             {
+                speaker: `<i class="fa-solid fa-comments icon--inline "></i>Sydney`,
+                speech: "Come on..?! What fuck <em>AM I</em> tripping for?!",
+                emotion: null,
                 text_type: "speech",
                 text_class: null
             },
             {
-                speaker: "Marcus",
+                speaker: `<i class="fa-solid fa-comments icon--inline "></i>Marcus`,
                 speech: "The cakes are <em>in the oven</em>.",
                 emotion: null,
                 text_type: "speech",
@@ -557,14 +564,21 @@ export const captions = [
         end: "",
         text: [
             {
-                speaker: "Sydney",
+                speaker: null,
+                speech: '<i class="fa-solid fa-comments"></i><span>Talking over eachother</span>',
+                emotion: null,
+                text_type: "icon",
+                text_class: null
+            },
+            {
+                speaker: `<i class="fa-solid fa-comments icon--inline"></i>Sydney`,
                 speech: "Are you here right now?",
                 emotion: null,
                 text_type: "speech",
                 text_class: null
             },
             {
-                speaker: "Marcus",
+                speaker: `<i class="fa-solid fa-comments icon--inline"></i>Marcus`,
                 speech: "It doesn't make a difference.",
                 emotion: null,
                 text_type: "speech",
