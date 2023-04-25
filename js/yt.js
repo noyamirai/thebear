@@ -34,11 +34,22 @@ function insertCaptions(captionsObject){
     for (const key in captionsObject) {
         const captionItem = captionsObject[key];
 
-        const textEl = document.createElement('p');
+        const textEl = document.createElement('div');
         textEl.classList.add('p' + key);
+        textEl.classList.add('cc__item');
         textEl.setAttribute('data-cc-item', '');
 
-        const htmlString = `<span class="speaker">${captionItem.text.speaker}:</span><span>${captionItem.text.text}</span>`;
+		let htmlString = '';
+
+		captionItem.text.forEach((textObject) => {
+			htmlString += `
+				<p>
+					<span class="speaker">${textObject.speaker}:</span>
+					<span>${textObject.speech}</span>
+				</p>
+			`;
+		});
+
         textEl.innerHTML = htmlString;
 
         ccContainer.appendChild(textEl);
