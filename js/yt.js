@@ -11,10 +11,12 @@ window.onYouTubeIframeAPIReady = function () {
 		videoId: '1K3z62yoiOA',
 		playerVars: {
 			color: 'white',
-			'autoplay': 0,
-			'rel' : 0,
-			'fs' : 0,
-			controls: 0,
+			autoplay: 1,
+			rel : 0,
+			fs : 0,
+			// controls: 0,
+			cc_load_policy: 0,
+			modestbranding: 1
 			//start: 
 			//autoplay: '1'
 			//playlist: 'taJ60kskkns,FG0fTKAqZ5g'

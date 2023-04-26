@@ -5,6 +5,20 @@ For the course "Human Centered Design" everyone was tasked to create an exclusiv
 ## Debriefing
 
 
+
+Voor dit vak krijg je een ontwerp-opdracht die je gaat maken voor 1 mens. Een echt mens. Je moet je ontwerp elke week testen. Door te testen en te itereren ga je je ontwerp verbeteren. Uiteindelijk heb je een ontwerp dat exclusief gemaakt is voor 1 persoon. Een exclusive design ... Wie is deze persoon dan voor wie je dit gaat maken? Wat vindt deze persoon leuk of juist niet? Hoe bedient deze persoon een computer?
+
+- Leren hoe je (design) principles in een ontwerp kan toepassen.
+- User needs begrijpen en gebruiken in je ontwerp.
+- Leren hoe je moet testen en de resultaten gebruiken voor het verbeteren van je ontwerp.
+
+### Marie van Driessche
+
+Marie is Doof (met een hoofdletter inderdaad, dat betekent dat ze zichzelf als Doof identificeert, wat simpelgezegd betekent dat haar eerste taal Nederlandse Gebarentaal is). Je zult begrijpen dat Marie moeite heeft met dingen waar geluid een grote rol speelt.
+
+Voor Marie gaat er enorm veel nuance verloren tijdens het kijken naar een film of een documentaire. Bij veel films worden closed captions aangeboden, maar die zijn zo neutraal als maar kan. Hoe zou je closed captions kunnen verrijken zodat deze voor Marie meer betekenis krijgen?
+
+
 ## First meeting with Marie
 
 ## Creating a prototype
