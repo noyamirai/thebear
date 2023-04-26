@@ -14,7 +14,7 @@ window.onYouTubeIframeAPIReady = function () {
 			'autoplay': 0,
 			'rel' : 0,
 			'fs' : 0,
-			// controls: 0,
+			controls: 0,
 			//start: 
 			//autoplay: '1'
 			//playlist: 'taJ60kskkns,FG0fTKAqZ5g'

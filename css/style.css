@@ -152,7 +152,7 @@ main {
     }
 
     .cc__item p {
-      width: 100%;
+      /* width: 100%; */
       padding: .3rem .5rem;
 
       border-radius: .15rem;
@@ -222,6 +222,7 @@ main {
       font-size: var(--small-font-size);
     }
 
+    /* regular speech icon above text */
     .icon {
       display: none!important;
 
@@ -237,15 +238,18 @@ main {
         margin-left: .3125rem;
       }
 
-      /* comment out to show difference */
+      /* speech icon text */
       .icon span {
         display: none;
       }
 
+      /* inline speech icon */
       .icon--inline {
+        /* display: none!important; */
         margin-right: .25rem;
       }
 
+      /* phone icon bottom left */
       .icon.icon--phone {
         display: block!important;
         position: absolute;
