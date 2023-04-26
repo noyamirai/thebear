@@ -16,7 +16,12 @@ intro
 ### Test plan
 So, I created a pretty basic (in my opinion) closed caption prototype based on a scene from The Bear on YouTube. Before starting and going into the test with Marie and my group, I figured it would be best to establish a small test plan. I am mostly curious about whether or not the visual cue I made to indicate a phone ringing in the background, is clear and even noticable for Marie. Does she even see or notice it? (she could be focusing on reading the text instead) And does she know what it means/what it is supposed to indicate? 
 
-I also want to know if she can feel and grasp the tense atmosphere of the scene. It's a pretty chaotic and hectic scene, as she mentioned herself before, with lots of things going on (offscreen). At one point during the scene, two characters (Sydney and Marcus), end up arguing with each other about priorities. During this argument, both characters talk over each other. I have created several different ways (for now) to try and show that the two characters are doing so: a version with 'basic' captions that shows the speech of both characters underneath each other, another version of captions underneath each other but with an additional speech icon above the captions (with and without explanatory text), and finally a version where I placed the speech icon next to the names of the characters.
+I also want to know if she can feel and grasp the tense atmosphere of the scene. It's a pretty chaotic and hectic scene, as she mentioned herself before, with lots of things going on (offscreen). At one point during the scene, two characters (Sydney and Marcus), end up arguing with each other about priorities. During this argument, both characters talk over each other. I have created several different ways (for now) to try and show that the two characters are doing so: 
+- 'basic' captions that shows the speech of both characters underneath each other
+- captions underneath each other but with an additional speech icon above the captions (with and without explanatory text)
+- and finally a version where I placed the speech icon next to the names of the characters
+
+![Different CC ideas to indicate multiple characters speaking over each other](./images/cc-talking_over_eachother-versions.jpg)
 
 I've also created a few effects for loud/shouting speeches that happen during the scene or characters that say something soft/from far away. So, I am also curious about what her thoughts are about this and if it conveys the emotion/tone/distance correctly for her. As for the context/scenario, she mentioned she mostly watches shows (and movies, but very rarely) at home on her TV, so for this test I would like her to imagine being at home and watching the scene on TV. 
 
