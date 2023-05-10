@@ -11,7 +11,7 @@ window.onYouTubeIframeAPIReady = function () {
 		videoId: '1K3z62yoiOA',
 		playerVars: {
 			color: 'white',
-			autoplay: 1,
+			// autoplay: 1,
 			rel : 0,
 			fs : 0,
 			// controls: 0,
@@ -68,7 +68,7 @@ function insertCaptions(captionsObject){
 
 			if (textObject.text_type != 'icon') {
 				htmlString += `
-					<p class="p${i} ${ textObject.text_class ?  textObject.text_class : ''}">
+					<p class="p${i} ${ textObject.text_class ?  textObject.text_class : ''} ${ textObject.activate_audio_cue ? 'audio-cue audio-cue--' + textObject.audio_cue_direction : '' }" style="${textObject.positioning ? 'transform: ' + textObject.positioning : ''}">
 					
 						${ textObject.speaker ? '<span class="cc__speaker">' + textObject.speaker + (textObject.emotion ? ' <span class="cc__extra">(' + textObject.emotion + ')</span>' : '') + ':</span>' : '' }
 						<span class="cc__text">${textObject.text_type == 'sound' ? '[' : ''}${textObject.speech}${textObject.text_type == 'sound' ? ']' : ''}</span>
@@ -93,6 +93,8 @@ function insertCaptions(captionsObject){
 	updateTimerDisplay(captionsObject);
 }
 
+let count = 0;
+
 function triggerRing (startAni, cancel = false) {
 
 	if (cancel) {
@@ -104,10 +106,13 @@ function triggerRing (startAni, cancel = false) {
 	}
 
   intervalId = setInterval(() => {
+	console.log('trigger 2');
     startAni();
+
   }, 3000);
 
 }
+
 
 function startAni() {
 	const phoneCont = document.querySelector('.icon--phone');
@@ -115,10 +120,15 @@ function startAni() {
 	phoneCont.classList.remove('hide');
 	phoneCont.classList.add('active');
 
+	count++;
+	const ringCount = phoneCont.querySelector('[data-ring-count]');
+	ringCount.textContent = ' ' + count + 'x';
+
 	// Remove the "box" class from the box element after the animation finishes
 	setTimeout(() => {
 		phoneCont.classList.remove('active');
 	}, 1000);
+
 	console.log('start ani here');
 }
 
@@ -129,11 +139,17 @@ function updateTimerDisplay(captions){
 	var i = 0;
 
 	if (t>0 && !startedInterval) {
-		startAni();
+		// startAni();
+		console.log('trigger 1');
 		triggerRing(startAni);
 		startedInterval = true;
 	} else if (t==0) {
 		triggerRing(null, true)
+	}
+
+	if (t > 1.8) {
+		const phoneCont = document.querySelector('.icon--phone');
+		phoneCont.classList.add('bottom');
 	}
 
 	while( i < captions.length) {
