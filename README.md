@@ -1,25 +1,52 @@
-# Human Centered Design - Reimagine CCs
+# Human Centered Design - Enhanced CCs
 
 For the course "Human Centered Design" everyone was tasked to create an exclusive design for someone with a disability based on a problem that they are facing. The primary objective is to focus on understanding the perspective of the person we will be designing for, what their wishes and needs are and how to translate this into a prototype solution. Through interviews and testing with said person, we will gather the information needed to create a solution that has specifically been designed for them and figure out if it meets their needs and wishes.
 
-## Debriefing
+**The main learning goals of this course are:**
+- Learn how to apply exclusive design principles
+- Understand and use the needs of the person you're designing for
+- Learn how to test and use the test results to improve your design
 
+## Marie van Driessche
 
+For my exclusive design I was paired with Marie van Driessche. Marie is Deaf (yes, with a capital letter D, indicating that she identifies herself as Deaf, which essentially means that her first language is Dutch Sign Language).
 
-Voor dit vak krijg je een ontwerp-opdracht die je gaat maken voor 1 mens. Een echt mens. Je moet je ontwerp elke week testen. Door te testen en te itereren ga je je ontwerp verbeteren. Uiteindelijk heb je een ontwerp dat exclusief gemaakt is voor 1 persoon. Een exclusive design ... Wie is deze persoon dan voor wie je dit gaat maken? Wat vindt deze persoon leuk of juist niet? Hoe bedient deze persoon een computer?
+For Marie, watching a movie or a documentary results in a significant loss of nuance. While many films provide closed captions, they are often as neutral as possible and inaccurate when it comes to writing speech. My main goal was to think of a way to enrich closed captions to make them more meaningful for Marie.
 
-- Leren hoe je (design) principles in een ontwerp kan toepassen.
-- User needs begrijpen en gebruiken in je ontwerp.
-- Leren hoe je moet testen en de resultaten gebruiken voor het verbeteren van je ontwerp.
-
-### Marie van Driessche
-
-Marie is Doof (met een hoofdletter inderdaad, dat betekent dat ze zichzelf als Doof identificeert, wat simpelgezegd betekent dat haar eerste taal Nederlandse Gebarentaal is). Je zult begrijpen dat Marie moeite heeft met dingen waar geluid een grote rol speelt.
-
-Voor Marie gaat er enorm veel nuance verloren tijdens het kijken naar een film of een documentaire. Bij veel films worden closed captions aangeboden, maar die zijn zo neutraal als maar kan. Hoe zou je closed captions kunnen verrijken zodat deze voor Marie meer betekenis krijgen?
-
+During our first meeting and interview we got to know Marie a bit better as a person. She also shared with us her experiences and challenges about accessibility for those who are Deaf or hard of hearing.
 
 ## First meeting with Marie
+
+Before the others and I, who all got paired with Marie, dove into creating an exclusive design for her, we had a first initial meeting/interview with her! So, naturally we prepared some questions and discussed our assumptions related to the topic, Marie and the assignment itself. It was important for us to test the assumptions we had with Marie, to see which ones were accurate and which ones were not, and eventually learn new information about Marie herself!
+
+One thing we were curious about was what the difference is between "deaf" and "Deaf". Marie explained the difference between "deaf" and "Deaf" from a medical and social perspective. "Deaf" with a capital D refers to a community and culture of individuals who are deaf and do not see it as a problem or disability, but rather embrace their identity. There are various ways people perceive their deafness, and while the medical perspective may view it as a disability, many in the Deaf community consider it as a normal part of who they are.
+
+We discussed plenty of things during our first meeting with Marie, which can be read in [this document](https://docs.google.com/document/d/1LDvOvYqQnEArSfly82C-WOUW9OdvcDLzjdc0qaiFU7Q/edit?usp=sharing) (please know that I tried my best with the notes, but note taking is very difficult unfortunately... so there might be some silly words or emoticons in there!)
+
+With all we know about Marie and her wishes, I was able to establish a user scenario.
+
+## User Scenario
+### So, who exactly is Marie?
+
+Marie (34) is Deaf (and was born Deaf) and primarily communicates using Dutch Sign Language. She proudly introduced herself to us as a UX designer at UpInk (an innovative design agency in Amsterdam). UpInk is a digital agency with a focus on projects that have social impact. 
+
+Marie lives in Amsterdam and shares her home with a beloved cat. She has a diverse range of other interests and hobbies, including kickboxing, crossfit, and kitesurfing! Marie also teaches kitesurfing to Deaf individuals, combining her passion for sports and inclusivity. Additionally, she enjoys cooking, especially baking cookies, and finds inspiration in reading cookbooks. Marie values spending time with friends, engaging in enjoyable activities, and has recently started a small course.
+
+Growing up, she relied on sign language as her primary way of communication. Marie explained to us that she is unable to hear anything and relies on lip-reading, which can vary depending on the speaker's clarity, context, and visual cues. To facilitate communication during work meetings, Marie always has a sign language interpreter present, making it easier for her to follow discussions (sign language being her native language).
+
+Besides her interests, she is passionate about watching movies and documentaries. However, she often finds it challenging to fully comprehend and enjoy the content due to the lack of accessibility for individuals who are Deaf or hard of hearing. This is where I come in to help!
+
+### What does Marie need?
+
+Marie explained to us that closed captions are usually available when she wants to watch a movie or documentary, but she knows from past experiences that they tend to be very basic and devoid of the subtleties that make the viewing experience truly engaging. She wants more enhanced captions, that would include additional information such as sound descriptions, emotional cues, and speaker identification to provide a more immersive experience.
+
+Marie shared how these enhanced closed captions could greatly improve her movie-watching experience. With this enriched accessibility feature, she would be able to grasp the subtle nuances of dialogue, experience the emotional impact of scenes, and fully immerse herself in the storytelling.
+
+### How Marie have her needs met?
+
+This isn't just like any other digital prototype that we've made for this Minor. Usually it's a website or app, but Marie is fully capable of utilizing the web and digital technologies just like any other individual! Our challenge is to create enhanced closed captions, which will be showed over a video. Instead of Marie needing to perform specific actions to achieve her goals/needs, it is up to us as designers to make sure our prototype **meets** her goals and needs.
+
+Marie suggested we use visual representations or symbols for sound descriptions to convey the atmosphere or tone of a specific scene. She mentioned to us that sometimes movies or shows will "try too hard" with their closed captions; it is not always needed to describe the sound when it is happening on screen (example: explosion happening on screen!). She wants us to introduce speakers within the captions appropriately so she can follow the conversation more easily and understand who is speaking. Another thing Marie appreciates is when the closed captions are consistent and include an accurate representation of the speech or way something was said by a person on screen.
 
 ## Creating a prototype
 
