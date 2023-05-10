@@ -15,7 +15,7 @@ For Marie, watching a movie or a documentary results in a significant loss of nu
 
 During our first meeting and interview we got to know Marie a bit better as a person. She also shared with us her experiences and challenges about accessibility for those who are Deaf or hard of hearing.
 
-## First meeting with Marie
+## First meeting (test) with Marie
 
 Before the others and I, who all got paired with Marie, dove into creating an exclusive design for her, we had a first initial meeting/interview with her! So, naturally we prepared some questions and discussed our assumptions related to the topic, Marie and the assignment itself. It was important for us to test the assumptions we had with Marie, to see which ones were accurate and which ones were not, and eventually learn new information about Marie herself!
 
@@ -23,7 +23,7 @@ One thing we were curious about was what the difference is between "deaf" and "D
 
 We discussed plenty of things during our first meeting with Marie, which can be read in [this document](https://docs.google.com/document/d/1LDvOvYqQnEArSfly82C-WOUW9OdvcDLzjdc0qaiFU7Q/edit?usp=sharing) (please know that I tried my best with the notes, but note taking is very difficult unfortunately... so there might be some silly words or emoticons in there!)
 
-With all we know about Marie and her wishes, I was able to establish a user scenario.
+Due to the short amount of time we had to prepare for our first meeting, we we're unable to create a first prototype. However, because we discussed our assumptions and asked Marie to show us some 'good' closed captions examples, I say the first 'test' was successful! We received enough information/wishes from Marie to properly get started on our prototype and creating a user scenario!
 
 ## User Scenario
 ### So, who exactly is Marie?
@@ -51,10 +51,6 @@ Marie suggested we use visual representations or symbols for sound descriptions 
 ## Creating a prototype
 
 ## First test
-
-intro
-
-### Test plan
 So, I created a pretty basic (in my opinion) closed caption prototype based on a scene from The Bear on YouTube. Before starting and going into the test with Marie and my group, I figured it would be best to establish a small test plan. I am mostly curious about whether or not the visual cue I made to indicate a phone ringing in the background, is clear and even noticable for Marie. Does she even see or notice it? (she could be focusing on reading the text instead) And does she know what it means/what it is supposed to indicate? 
 
 I also want to know if she can feel and grasp the tense atmosphere of the scene. It's a pretty chaotic and hectic scene, as she mentioned herself before, with lots of things going on (offscreen). At one point during the scene, two characters (Sydney and Marcus), end up arguing with each other about priorities. During this argument, both characters talk over each other. I have created several different ways (for now) to try and show that the two characters are doing so: 
@@ -78,6 +74,6 @@ Another thing I'm curious of are some other visual cues I created, but wasn't ab
 - Do the style effects, such as animations or font sizing, convey the right emotion/tone/distance to Marie?
 - If time left: would the visual cues on a video help Marie understanding a specific sound happened offscreen? Or might it be too much of a visual clutter?
 
-### Evaluatie
+### Results
 
 ### Conclusion and next step
